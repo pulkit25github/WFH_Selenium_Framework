@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [WFH_Selenium_Framework]" parallel="classes">
+  <parameter name="browser" value="chrome"/>
+  <test name="Guru99 logindemo(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.TC02_Verify_New_cust">
+        <methods>
+          <include name="addNewCust"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.TC02_Verify_New_cust -->
+    </classes>
+  </test> <!-- Guru99 logindemo(failed) -->
+</suite> <!-- Failed suite [WFH_Selenium_Framework] -->

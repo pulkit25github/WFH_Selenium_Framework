@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [WFH_Selenium_Framework]" parallel="classes">
+  <parameter name="browser" value="chrome"/>
+  <test name="Guru99 logindemo">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.TC01_Login_test"/>
+    </classes>
+  </test> <!-- Guru99 logindemo -->
+</suite> <!-- Failed suite [WFH_Selenium_Framework] -->
