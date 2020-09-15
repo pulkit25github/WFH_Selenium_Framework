@@ -26,7 +26,7 @@ public class TC01_Login_test extends BaseClass
     	lp.submit();
   
     	
-    	if(driver.getTitle().equalsIgnoreCase("Guru99 Bank Manager HomePage")) 
+    	if(driver.getTitle().equals("Guru99 Bank Manager HomePage")) 
     	{
     		Assert.assertTrue(true);
     		logger.info("Login test passed");
@@ -34,7 +34,7 @@ public class TC01_Login_test extends BaseClass
     	
     	else
     	{
-    		//captureScreen(driver, "TC01_Login_test");
+    		captureScreen(driver, "TC01_Login_test");
     		Assert.assertTrue(false);
     		logger.info("Login test failed");
     	}
