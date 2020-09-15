@@ -1,37 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="129147" started-at="2020-09-14T13:48:48Z" finished-at="2020-09-14T13:50:57Z">
+  <suite name="WFH_Selenium_Framework" duration-ms="187653" started-at="2020-09-15T11:49:01Z" finished-at="2020-09-15T11:52:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="129147" started-at="2020-09-14T13:48:48Z" finished-at="2020-09-14T13:50:57Z">
-      <class name="utilities.Reporting_Extent">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:[Reporting_Extent passed=0 failed=0 skipped=0]]" name="setExtent" is-config="true" duration-ms="2302" started-at="2020-09-14T19:18:48Z" finished-at="2020-09-14T19:18:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:[Reporting_Extent passed=0 failed=0 skipped=0]]" name="setup" is-config="true" duration-ms="54731" started-at="2020-09-14T19:18:50Z" finished-at="2020-09-14T19:19:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="logotest()[pri:0, instance:[Reporting_Extent passed=0 failed=0 skipped=0]]" name="logotest" duration-ms="1047" started-at="2020-09-14T19:19:45Z" finished-at="2020-09-14T19:19:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logotest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:[Reporting_Extent passed=0 failed=0 skipped=0]]" name="setup" is-config="true" duration-ms="63401" started-at="2020-09-14T19:19:46Z" finished-at="2020-09-14T19:20:49Z">
+    <test name="Guru99 logindemo" duration-ms="187653" started-at="2020-09-15T11:49:01Z" finished-at="2020-09-15T11:52:09Z">
+      <class name="tests.TC01_Login_test">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.TC01_Login_test@1acb0d1]" name="setup" is-config="true" duration-ms="77006" started-at="2020-09-15T17:19:04Z" finished-at="2020-09-15T17:20:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="titletest()[pri:0, instance:[Reporting_Extent passed=0 failed=0 skipped=0]]" name="titletest" duration-ms="155" started-at="2020-09-14T19:20:49Z" finished-at="2020-09-14T19:20:49Z">
+        <test-method status="PASS" signature="loginpage_test()[pri:0, instance:tests.TC01_Login_test@1acb0d1]" name="loginpage_test" duration-ms="107411" started-at="2020-09-15T17:20:21Z" finished-at="2020-09-15T17:22:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- titletest -->
-        <test-method status="PASS" signature="endreport()[pri:0, instance:[Reporting_Extent passed=0 failed=0 skipped=0]]" name="endreport" is-config="true" duration-ms="7303" started-at="2020-09-14T19:20:50Z" finished-at="2020-09-14T19:20:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endreport -->
-      </class> <!-- utilities.Reporting_Extent -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- loginpage_test -->
+      </class> <!-- tests.TC01_Login_test -->
+    </test> <!-- Guru99 logindemo -->
+  </suite> <!-- WFH_Selenium_Framework -->
 </testng-results>

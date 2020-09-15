@@ -1,0 +1,4 @@
+2020-09-15 17:20:21,434 [pool-1-thread-1] INFO WFH_Selenium_Framework - Url opened
+2020-09-15 17:21:52,982 [pool-1-thread-1] INFO WFH_Selenium_Framework - Username Entered
+2020-09-15 17:21:55,922 [pool-1-thread-1] INFO WFH_Selenium_Framework - pwd Entered
+2020-09-15 17:22:08,807 [pool-1-thread-1] INFO WFH_Selenium_Framework - Login test passed

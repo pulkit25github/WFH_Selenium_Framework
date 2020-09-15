@@ -27,13 +27,14 @@ import utilities.ReadConfig;
 public class BaseClass 
 {
 
-	static ReadConfig rc= new ReadConfig();
+	 ReadConfig rc= new ReadConfig();
 	
 	public String baseUrl = rc.getApplicationUrl();
-	public static  String username = rc.getusername();
-	public  static String password = rc.getpassword();
+	public String username = rc.getusername();
+	public String password = rc.getpassword();
 	public static WebDriver driver;  
-	// You can put hardcoded values in baseclass or you can use config.properties file for values.	 
+
+// You can put hardcoded values in baseclass or you can use config.properties file for values.	 
 	
 /*	public String baseUrl = "http://demo.guru99.com/V4/";
 	public String username = "mngr282136";
@@ -48,6 +49,7 @@ public class BaseClass
 	
 	public void setup(String br) throws Exception
 	{
+		
 		// For testng xml file:
 		
 		if(br.equals("firefox"))

@@ -35,7 +35,7 @@ public class Reporting_extent extends TestListenerAdapter
 		htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/Reports/"+reprtName);//specify location of the report
 		htmlReporter.loadXMLConfig(System.getProperty("user.dir")+ "/extent-config.xml");
 		
-		htmlReporter.config().setDocumentTitle("InetBanking Test Project"); // Tile of report
+		htmlReporter.config().setDocumentTitle("Guru9demo Test Project"); // Tile of report
 		htmlReporter.config().setReportName("Functional Test Automation Report"); // name of the report
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP); //location of the chart
 		htmlReporter.config().setTheme(Theme.DARK);
