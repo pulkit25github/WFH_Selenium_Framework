@@ -2,15 +2,24 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="WFH_Selenium_Framework"  parallel="classes">
+  
+  
+  <listeners>
+		<listener class-name="utilities.Reporting_extent" />
+	</listeners>
+  
+  
   <test name="Guru99 logindemo">
   <parameter name="browser" value="chrome" />
     <classes>
        <class name="tests.TC01_Login_test"/> 
   <!--     <class name="tests.Login_test_DDT"/> -->
   <!--  <class name="tests.TC02_Verify_New_cust"/> -->
-   
     </classes>
  </test> 
+ 
+ 
+ 
 </suite> 
 <!--
 <test name="Guru99 logindemo1">

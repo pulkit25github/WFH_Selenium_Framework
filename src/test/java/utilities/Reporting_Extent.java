@@ -1,91 +1,89 @@
 package utilities;
 
+//Listener class used to generate Extent reports
+
+import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
+import org.testng.ITestContext;
+import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-// Basically it is a Listener class used to generate extent reports
-
-public class Reporting_Extent extends TestListenerAdapter
+public class Reporting_extent extends TestListenerAdapter
 {
-
-	public WebDriver driver;
-	
-	public ExtentHtmlReporter  htmlreporter;
+	public ExtentHtmlReporter htmlReporter;
 	public ExtentReports extent;
-	public ExtentTest test;
+	public ExtentTest logger;
 	
-	@BeforeTest
-	public void setExtent()
+		
+	public void onStart(ITestContext testContext)
 	{
-		// To create report with timestamp...so it will not overwrite
-		String timestamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date()); // timestamp
-		String MyReport = "Test-report-" +timestamp+".html";
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
+		String reprtName="Test-Report-"+timeStamp+".html";
 		
+		htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/Reports/"+reprtName);//specify location of the report
+		htmlReporter.loadXMLConfig(System.getProperty("user.dir")+ "/extent-config.xml");
 		
-		htmlreporter= new ExtentHtmlReporter("./"+"\\Reports\\"+MyReport);
-		htmlreporter.config().setDocumentTitle("WFH_selenium_report"); // Title of the report
-		htmlreporter.config().setReportName("Functional Report"); // Name of the report
-		htmlreporter.config().setTestViewChartLocation(ChartLocation.TOP); // location of the chart
-		htmlreporter.config().setTheme(Theme.DARK);
+		htmlReporter.config().setDocumentTitle("InetBanking Test Project"); // Tile of report
+		htmlReporter.config().setReportName("Functional Test Automation Report"); // name of the report
+		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP); //location of the chart
+		htmlReporter.config().setTheme(Theme.DARK);
 		
-		extent= new ExtentReports();
-	    
-		extent.attachReporter(htmlreporter); // Attach the htmlreporter to extent
+        extent=new ExtentReports();
 		
-		extent.setSystemInfo("Hostname", "Pulkit-PC");
-		extent.setSystemInfo("Browser", "firefox");
-		extent.setSystemInfo("OS", "Windows 10");
-	    extent.setSystemInfo("Tester", "Rudra");
+		extent.attachReporter(htmlReporter);  
+		extent.setSystemInfo("Host name","localhost");
+		extent.setSystemInfo("Environemnt","QA");
+		extent.setSystemInfo("user","pulkit");
 	}
 	
-	@AfterTest
-	public void endreport()
+	public void onTestSuccess(ITestResult tr)
+	{
+		logger=extent.createTest(tr.getName()); // create new entry in th report
+		logger.log(Status.PASS,MarkupHelper.createLabel(tr.getName(),ExtentColor.GREEN)); // send the passed information to the report with GREEN color highlighted
+	}
+	
+	public void onTestFailure(ITestResult tr)
+	{
+		logger=extent.createTest(tr.getName()); // create new entry in th report
+		logger.log(Status.FAIL,MarkupHelper.createLabel(tr.getName(),ExtentColor.RED)); // send the passed information to the report with GREEN color highlighted
+		
+		String screenshotPath=System.getProperty("user.dir")+"\\Screenshots\\"+tr.getName()+".png";
+		
+		File f = new File(screenshotPath); 
+		
+		if(f.exists())
+		{
+		try {
+			logger.fail("Screenshot is below:" + logger.addScreenCaptureFromPath(screenshotPath));
+			} 
+		catch (IOException e) 
+				{
+				e.printStackTrace();
+				}
+		}
+		
+	}
+	
+	public void onTestSkipped(ITestResult tr)
+	{
+		logger=extent.createTest(tr.getName()); // create new entry in th report
+		logger.log(Status.SKIP,MarkupHelper.createLabel(tr.getName(),ExtentColor.ORANGE));
+	}
+	
+	public void onFinish(ITestContext testContext)
 	{
 		extent.flush();
 	}
-	
-	@BeforeMethod
-	public void setup()
-	{
-		System.setProperty("webdriver.gecko.driver" , System.getProperty("user.dir")+ "\\Drivers\\geckodriver.exe");
-		driver= new FirefoxDriver();
-		driver.get("https://demo.nopcommerce.com/");
-	}
-	
-	@Test
-	public void titletest()
-	{
-		test=  extent.createTest("titlecheck"); // test refer from top
-		String title = driver.getTitle();
-		System.out.println(title);
-		Assert.assertEquals(title, "nopCommerce demo store");
-	}
-	
-	@Test
-	public void logotest()
-	{
-		test=  extent.createTest("logocheck"); // test refer from top
-		
-	    Boolean status=	 driver.findElement(By.xpath("html/body/div[6]/div[1]/div[2]/div[1]/a/img")).isDisplayed();
-		Assert.assertTrue(status);
-	} 
 }
