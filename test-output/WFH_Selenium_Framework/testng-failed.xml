@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [WFH_Selenium_Framework]" parallel="classes">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [WFH_Selenium_Framework]" parallel="classes">
   <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="utilities.Reporting_extent"/>
+  </listeners>
   <test name="Guru99 logindemo(failed)" parallel="classes">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="tests.TC02_Verify_New_cust">
+      <class name="tests.TC01_Login_test">
         <methods>
-          <include name="addNewCust"/>
+          <include name="loginpage_test"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- tests.TC02_Verify_New_cust -->
+      </class> <!-- tests.TC01_Login_test -->
     </classes>
   </test> <!-- Guru99 logindemo(failed) -->
 </suite> <!-- Failed suite [WFH_Selenium_Framework] -->

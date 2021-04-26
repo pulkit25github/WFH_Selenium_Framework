@@ -1,10 +1,11 @@
 utilities\XlUtils.class
-utilities\Reporting_Extent.class
 tests\Login_test_DDT.class
 pages\New_Customer.class
 pages\Login_page.class
 tests\BaseClass.class
 tests\TC01_Login_test.class
 utilities\Read_data_excel.class
+utilities\Reporting_extent.class
+utilities\Reporting_Extent_dummy.class
 tests\TC02_Verify_New_cust.class
 utilities\ReadConfig.class

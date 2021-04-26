@@ -87,7 +87,7 @@ public class BaseClass
      
      
      //For log4j
-	 logger = Logger.getLogger("WFH_Selenium_Framework");
+	  logger = Logger.getLogger("WFH_Selenium_Framework");
 	// PropertyConfigurator.configure("log4j.properties");
 	 PropertyConfigurator.configure(System.getProperty("user.dir") + "/src/resources/log4j.properties");
 }

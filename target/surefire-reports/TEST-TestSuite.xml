@@ -1,132 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="34.634" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="24.918" tests="2" errors="0" skipped="1" failures="1">
   <properties>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="JOB_NAME" value="Guru99Demo_Maven"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="NUMBER_OF_PROCESSORS" value="4"/>
-    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
-    <property name="JENKINS_HOME" value="C:\Program Files\Jenkins"/>
-    <property name="HUDSON_SERVER_COOKIE" value="1eda39b7ff52b66d"/>
-    <property name="POM_ARTIFACTID" value="WFH_Selenium_Framework"/>
-    <property name="os.name" value="Windows 8.1"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes"/>
-    <property name="EXECUTOR_NUMBER" value="0"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="POM_DISPLAYNAME" value="WFH_Selenium_Framework"/>
-    <property name="NODE_LABELS" value="master"/>
-    <property name="TEMP" value="C:\WINDOWS\TEMP"/>
-    <property name="java.runtime.version" value="1.8.0_161-b12"/>
-    <property name="WINSW_SERVICE_ID" value="Jenkins"/>
-    <property name="user.name" value="NIDHI$"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="ProgramFiles" value="C:\Program Files"/>
-    <property name="user.language" value="en"/>
-    <property name="JOB_BASE_NAME" value="Guru99Demo_Maven"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/Guru99Demo_Maven/5/display/redirect?page=changes"/>
-    <property name="M2" value="D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin"/>
-    <property name="BUILD_DISPLAY_NAME" value="#5"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
-    <property name="LOCALAPPDATA" value="C:\WINDOWS\system32\config\systemprofile\AppData\Local"/>
-    <property name="java.version" value="1.8.0_161"/>
-    <property name="PROCESSOR_LEVEL" value="6"/>
-    <property name="user.timezone" value="Asia/Calcutta"/>
-    <property name="USERNAME" value="NIDHI$"/>
-    <property name="sun.arch.data.model" value="32"/>
-    <property name="NODE_NAME" value="master"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="5"/>
-    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="file.separator" value="\"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="maven.conf" value="D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf"/>
-    <property name="java.class.version" value="52.0"/>
-    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
-    <property name="JRE_HOME" value="C:\Program Files\Java\jre1.8.0_201"/>
-    <property name="user.country" value="US"/>
-    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_161\jre"/>
-    <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="os.version" value="6.3"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/Guru99Demo_Maven/5/display/redirect"/>
-    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
-    <property name="TMP" value="C:\WINDOWS\TEMP"/>
-    <property name="path.separator" value=";"/>
-    <property name="java.vm.version" value="25.161-b12"/>
-    <property name="user.variant" value=""/>
-    <property name="JOB_DISPLAY_URL" value="http://localhost:8080/job/Guru99Demo_Maven/display/redirect"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="FP_NO_HOST_CHECK" value="NO"/>
-    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_161"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
-    <property name="ComSpec" value="C:\WINDOWS\system32\cmd.exe"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="POM_PACKAGING" value="jar"/>
-    <property name="SERVICE_ID" value="Jenkins"/>
-    <property name="COMPUTERNAME" value="NIDHI"/>
-    <property name="user.script" value=""/>
-    <property name="POM_GROUPID" value="WFH_Selenium_Framework"/>
-    <property name="user.home" value="C:\WINDOWS\system32\config\systemprofile"/>
-    <property name="PUBLIC" value="C:\Users\Public"/>
-    <property name="BUILD_TAG" value="jenkins-Guru99Demo_Maven-5"/>
-    <property name="JENKINS_SERVER_COOKIE" value="1eda39b7ff52b66d"/>
-    <property name="HUDSON_URL" value="http://localhost:8080/"/>
-    <property name="ProgramData" value="C:\ProgramData"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="USERPROFILE" value="C:\WINDOWS\system32\config\systemprofile"/>
-    <property name="CLASSPATH" value=""/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3/bin;C:\Program Files\Java\jdk1.8.0_161/bin;D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\System32;."/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="APPDATA" value="C:\WINDOWS\system32\config\systemprofile\AppData\Roaming"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="maven.home" value="D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3"/>
-    <property name="java.class.path" value="C:\Program Files\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.13.jar;D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3\boot\plexus-classworlds-2.6.0.jar;D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3 C:\Program Files\Jenkins\war\WEB-INF\lib\remoting-4.5.jar C:\Program Files\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Program Files\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 55781"/>
-    <property name="Path" value="D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\System32"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PROCESSOR_ARCHITECTURE" value="x86"/>
-    <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.8.0_161/bin"/>
-    <property name="PROCESSOR_IDENTIFIER" value="x86 Family 6 Model 42 Stepping 7, GenuineIntel"/>
-    <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="sun.cpu.endian" value="little"/>
-    <property name="M2_HOME" value="D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3"/>
-    <property name="java.io.tmpdir" value="C:\WINDOWS\TEMP\"/>
-    <property name="OS" value="Windows_NT"/>
-    <property name="HUDSON_HOME" value="C:\Program Files\Jenkins"/>
-    <property name="PATH+MAVEN" value="D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3/bin"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/Guru99Demo_Maven/5/"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="os.arch" value="x86"/>
-    <property name="SystemRoot" value="C:\WINDOWS"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="user.dir" value="D:\selenium\workspace_oxygen\WFH_Selenium_Framework"/>
-    <property name="JOB_URL" value="http://localhost:8080/job/Guru99Demo_Maven/"/>
-    <property name="USERDOMAIN" value="WORKGROUP"/>
-    <property name="line.separator" value="&#10;"/>
-    <property name="MAVEN_HOME" value="D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
+    <property name="java.vm.version" value="25.161-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\selenium\workspace_oxygen\WFH_Selenium_Framework"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
-    <property name="BUILD_NUMBER" value="5"/>
-    <property name="BASE" value="C:\Program Files\Jenkins"/>
-    <property name="JENKINS_URL" value="http://localhost:8080/"/>
-    <property name="PROCESSOR_REVISION" value="2a07"/>
-    <property name="windir" value="C:\WINDOWS"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="SystemDrive" value="C:"/>
-    <property name="maven3.interceptor" value="C:\Program Files\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar"/>
-    <property name="WORKSPACE_TMP" value="C:\Program Files\Jenkins\workspace\Guru99Demo_Maven@tmp"/>
-    <property name="WORKSPACE" value="C:\Program Files\Jenkins\workspace\Guru99Demo_Maven"/>
-    <property name="maven3.interceptor.common" value="C:\Program Files\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar"/>
-    <property name="WINSW_EXECUTABLE" value="C:\Program Files\Jenkins\jenkins.exe"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\selenium\workspace_oxygen\WFH_Selenium_Framework"/>
+    <property name="java.runtime.version" value="1.8.0_161-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\Nidhi\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\app\Nidhi\product\11.2.0\dbhome_1\bin;C:\OracleDb\app\Nidhi\product\11.2.0\dbhome_1\bin;D:\OracleDatabase\app\Nidhi\product\11.2.0\dbhome_1\bin;C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\OracleDatabase\app\Nidhi\product\11.2.0\dbhome_1\bin;D:\OracleDatabaseapp\client\Nidhi\product\12.2.0\client_1\bin;D:\OracleDatabaseapp\Nidhi\product\12.2.0\client_1;D:\OracleDatabase\app\Nidhi\product\11.2.0\dbhome_3\bin;D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\System32;C:\Program Files\Git\bin;D:\selenium\Drivers\chromedriver.exe;C:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\system32\Wbem;C:\Users\Nidhi\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.3"/>
+    <property name="library.jansi.path" value="D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Nidhi"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="PSModulePath" value="C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Nidhi"/>
+    <property name="java.class.path" value="D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_161\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.8.0_161"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\selenium\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase name="loginpage_test" classname="tests.TC01_Login_test" time="14.699"/>
+  <testcase name="setup" classname="tests.TC01_Login_test" time="23.918">
+    <failure message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;NIDHI&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_161&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NIDHI', ip: '192.168.1.15', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0_161'
+Driver info: driver.version: ChromeDriver
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:11997/status] to be available after 20002 ms
+Caused by: java.util.concurrent.TimeoutException
+</failure>
+    <system-out><![CDATA[[TestNGContentHandler] [WARN] It is strongly recommended to add "<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >" at the top of your file, otherwise TestNG may fail or not work as expected.
+]]></system-out>
+    <system-err><![CDATA[Apr 24, 2021 5:58:30 PM org.openqa.selenium.os.OsProcess checkForError
+SEVERE: org.apache.commons.exec.ExecuteException: Execution failed (Exit value: -559038737. Caused by java.io.IOException: Cannot run program "D:\selenium\workspace_oxygen\WFH_Selenium_Framework\Drivers\chromedriver.exe" (in directory "."): CreateProcess error=5, Access is denied)
+]]></system-err>
+  </testcase>
+  <testcase name="loginpage_test" classname="tests.TC01_Login_test" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>

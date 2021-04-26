@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.634 sec - in TestSuite
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 24.918 sec <<< FAILURE! - in TestSuite
+setup(tests.TC01_Login_test)  Time elapsed: 23.918 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NIDHI', ip: '192.168.1.15', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0_161'
+Driver info: driver.version: ChromeDriver
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:11997/status] to be available after 20002 ms
+Caused by: java.util.concurrent.TimeoutException
+
